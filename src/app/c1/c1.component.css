@@ -1,0 +1,761 @@
+/* double-circle.component.css */
+.inner1 {
+  width: 300px; /* Adjust the outer circle's width and height as needed */
+  height: 300px;
+  background: conic-gradient(#ebedf2 0deg 270deg, transparent 0deg 270deg);
+  border-radius: 50%;
+  position: relative;
+  margin: 23px;
+  margin-left: 31px;
+}
+
+.inner2 {
+  width: 250px; /* Adjust the inner circle's width and height as needed */
+  height: 250px;
+  background: conic-gradient(white 0deg 270deg, transparent 0deg 270deg);
+  border-radius: 50%;
+  position: absolute;
+  top: 25px; /* Adjust the position based on your design */
+  left: 25px;
+}
+.inner3{
+    width: 218px;
+    height: 218px;
+    background: conic-gradient(#ebedf2 0deg 270deg, transparent 0deg 270deg);
+    border-radius: 50%;
+    position: absolute;
+    top: 16px;
+    left: 15px;
+}
+
+.inner4{
+    width: 170px;
+    height: 170px;
+    background: conic-gradient(white 0deg 270deg, transparent 0deg 270deg);
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 38px;
+}
+.text1{
+    color: blue;
+    margin-top: -325px;
+    margin-left: 92px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 17px;
+}
+.text2{
+    color: blue;
+    margin-left: 68px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 17px;
+}
+/* Your CSS styles */
+
+.row1-column1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 228px;
+    height: 103px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    transition: box-shadow 0.3s, transform 0.3s;
+    margin-left: 0px;
+    border-right: 2px dashed aquamarine;
+}
+
+.row1-column1:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.row1-column1 .heading {
+  font-size: 16px; /* Adjust the font size as needed */
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.row1-column1:hover .heading {
+  color: #3498db; /* Adjust the color as needed */
+  transform: scale(1.1); /* Adjust the zoom level as needed */
+}
+
+.row1-column1 .number {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.row1-column1:hover .number {
+  color: #3498db; /* Adjust the color as needed */
+  transform: scale(1.2); /* Adjust the zoom level as needed */
+}
+.row1-column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 228px;
+    height: 103px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    transition: box-shadow 0.3s, transform 0.3s;
+    margin-left: 231px;
+    margin-top: -105px;
+    border-right: 2px dashed aquamarine;
+}
+
+.row1-column2:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.row1-column2 .heading {
+  font-size: 16px; /* Adjust the font size as needed */
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.row1-column2:hover .heading {
+  color: #3498db; /* Adjust the color as needed */
+  transform: scale(1.1); /* Adjust the zoom level as needed */
+}
+
+.row1-column2 .number {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.row1-column2:hover .number {
+  color: #3498db; /* Adjust the color as needed */
+  transform: scale(1.2); /* Adjust the zoom level as needed */
+}
+.row1-column3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 228px;
+    height: 103px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    transition: box-shadow 0.3s, transform 0.3s;
+    margin-left: 462px;
+    margin-top: -105px;
+}
+
+.row1-column3:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.row1-column3 .heading {
+  font-size: 16px; /* Adjust the font size as needed */
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.row1-column3:hover .heading {
+  color: #3498db; /* Adjust the color as needed */
+  transform: scale(1.1); /* Adjust the zoom level as needed */
+}
+
+.row1-column3 .number {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.row1-column3:hover .number {
+  color: #3498db; /* Adjust the color as needed */
+  transform: scale(1.2); /* Adjust the zoom level as needed */
+}
+.row1{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+    width: 690px;
+    margin-left: 784px;
+    margin-top: -79px;
+    border-left: 2px solid aquamarine;
+}
+.row2{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+    width: 690px;
+    margin-left: 784px;
+    margin-top: 7px;
+    border-left: 2px solid palegreen;
+}
+.row2-column1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 171px;
+    height: 103px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    transition: box-shadow 0.3s, transform 0.3s;
+    margin-left: 0px;
+    border-right: 2px dashed palegreen;
+}
+
+.row2-column1:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.row2-column1 .heading {
+  font-size: 16px; /* Adjust the font size as needed */
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.row2-column1:hover .heading {
+  color: #3498db; /* Adjust the color as needed */
+  transform: scale(1.1); /* Adjust the zoom level as needed */
+}
+
+.row2-column1 .number {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.row2-column1:hover .number {
+  color: #3498db; /* Adjust the color as needed */
+  transform: scale(1.2); /* Adjust the zoom level as needed */
+}
+.row2-column1 .info {
+    font-size: 13px; /* Adjust the font size as needed */
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+}
+  
+.row2-column1:hover .info {
+    color: #3498db; /* Adjust the color as needed */
+    transform: scale(1.2); /* Adjust the zoom level as needed */
+}
+.row2-column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 171px;
+    height: 103px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    transition: box-shadow 0.3s, transform 0.3s;
+    margin-left: 174px;
+    margin-top: -104px;
+    border-right: 2px dashed palegreen;
+}
+
+.row2-column2:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.row2-column2 .heading {
+  font-size: 16px; /* Adjust the font size as needed */
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.row2-column2:hover .heading {
+  color: #3498db; /* Adjust the color as needed */
+  transform: scale(1.1); /* Adjust the zoom level as needed */
+}
+
+.row2-column2 .number {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.row2-column2:hover .number {
+  color: #3498db; /* Adjust the color as needed */
+  transform: scale(1.2); /* Adjust the zoom level as needed */
+}
+.row2-column2 .info {
+    font-size: 13px; /* Adjust the font size as needed */
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+}
+  
+.row2-column2:hover .info {
+    color: #3498db; /* Adjust the color as needed */
+    transform: scale(1.2); /* Adjust the zoom level as needed */
+}
+.row2-column3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 171px;
+    height: 103px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    transition: box-shadow 0.3s, transform 0.3s;
+    margin-left: 347px;
+    margin-top: -105px;
+    border-right: 2px dashed palegreen;
+}
+
+.row2-column3:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.row2-column3 .heading {
+  font-size: 16px; /* Adjust the font size as needed */
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.row2-column3:hover .heading {
+  color: #3498db; /* Adjust the color as needed */
+  transform: scale(1.1); /* Adjust the zoom level as needed */
+}
+
+.row2-column3 .number {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.row2-column3:hover .number {
+  color: #3498db; /* Adjust the color as needed */
+  transform: scale(1.2); /* Adjust the zoom level as needed */
+}
+.row2-column3 .info {
+    font-size: 13px; /* Adjust the font size as needed */
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+}
+  
+.row2-column3:hover .info {
+    color: #3498db; /* Adjust the color as needed */
+    transform: scale(1.2); /* Adjust the zoom level as needed */
+}
+.row2-column4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 171px;
+    height: 103px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    transition: box-shadow 0.3s, transform 0.3s;
+    margin-left: 521px;
+    margin-top: -104px;
+    
+}
+
+.row2-column4:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.row2-column4 .heading {
+  font-size: 16px; /* Adjust the font size as needed */
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.row2-column4:hover .heading {
+  color: #3498db; /* Adjust the color as needed */
+  transform: scale(1.1); /* Adjust the zoom level as needed */
+}
+
+.row2-column4 .number {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.row2-column4:hover .number {
+  color: #3498db; /* Adjust the color as needed */
+  transform: scale(1.2); /* Adjust the zoom level as needed */
+}
+.row2-column4 .info {
+    font-size: 13px; /* Adjust the font size as needed */
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+}
+  
+.row2-column4:hover .info {
+    color: #3498db; /* Adjust the color as needed */
+    transform: scale(1.2); /* Adjust the zoom level as needed */
+}
+/* workpackage-table.component.css */
+.Gates.table {
+  border-collapse: collapse;
+  width: 87%;
+  margin-left: 95px;
+  margin-top: 43px;
+}
+
+.Gates th, .Gates td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.Gates th {
+  background-color:  rgb(89, 186, 193); /* Pale light green */
+}
+
+.Attendence.table {
+  border-collapse: collapse;
+  width: 87%;
+  margin-left: 95px;
+  margin-top: 43px;
+}
+
+.Attendence th, .Attendance td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.Attendence th {
+  background-color:  rgb(110, 105, 174); /* Pale light green */
+}
+
+table {
+  border-collapse: collapse;
+  width: 87%;
+  margin-left: 95px;
+  margin-top: 43px;
+  
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.idid {
+  width: 94%;
+  height: 84%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-right: 347px;
+  padding-left: 10px;
+  margin-left: 19px;
+}
+
+.idid th, .idid td {
+  padding: 5px; /* Adjust the padding to make cells smaller */
+  text-align: left;
+}
+
+.idid th {
+  background-color: rgb(110, 105, 174);
+}
+.idid th, .idid td {
+    border: 1px solid #ddd;
+    padding: 3px;
+    text-align: left;
+  }
+
+.id th{
+  background-color:  rgb(110, 105, 174);
+}
+
+.Workpackage-Wise-Gates{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+    background-color: white;
+    height: 270px;
+    margin: 15px;
+}
+.Work-Package-wise-Gates-Scanned{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+    background-color: white;
+    height: 357px;
+    display: flex;
+}
+.name1{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+    padding-left: 41px;
+    padding-top: 19px;
+}
+.name2{
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: blue;
+  padding-top: 75px;
+  margin-right: 1274px;
+}
+/* Add this to your existing CSS file or create a new one */
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+button {
+  width: 31%;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  height: 52px;
+  border: transparent;
+  font-size: 23px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+button:hover {
+  background-color: #f0f8ff; /* Pale light green on hover */
+  transform: scale(1.1); /* Enlarge the button on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+}
+
+.blue.active{
+  background-color: rgb(89, 186, 193); /* Blue when active */
+  color: white;
+  transform: scale(1.1); /* Enlarge the active button */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on active */
+}
+.purple1.active {
+  background-color: rgb(110, 105, 174);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Workpackage-Wise-Gates {
+  text-align: center;
+  margin-top: 20px;
+}
+/* Add other styles for the Gates-Not-Scanned container if needed */
+
+.micropocket-table {
+  width: 100%; /* Set the width as needed */
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.micropocket-table th, .micropocket-table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.micropocket-table th {
+  background-color: #f0f8ff; /* Set the background color for the header row */
+}
+
+/* Add more styles as needed */
+.Gates-Not-Scanned{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+  background-color: white;
+  width: 40%;
+    margin-left: 415px;
+    margin-top: -33px;
+    height: 524px;
+}
+/* Style for the search input */
+.search {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  color: #2c3e50;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.search:hover,
+.search:focus {
+  border-color: #1abc9c;
+}
+
+/* Style for the search button */
+.press {
+  padding: 10px 15px;
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.press:hover {
+  background-color: #27ae60;
+}
+.name3{
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: blue;
+  padding-top: 14px;
+    margin-left: -236px;
+}
+.name4{
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: blue;
+  padding-top: 14px;
+    margin-left: -236px;
+}
+.Offline-Scans{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+  background-color: white;
+  width: 31.2%;
+    margin-left: 1025px;
+    margin-top: -524px;
+    height: 524px;
+}
+.name5{
+  font-size: 21px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: blue;
+    padding-top: 14px;
+    margin-left: -551px;
+}
+.Unassigned-Tags {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+  background-color: white;
+  width: 50.2%;
+  margin-left: 1px;
+  margin-top: 15px;
+  height: 524px;
+}
+.name6{
+  font-size: 21px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: blue;
+    padding-top: 14px;
+    margin-left: -418px;
+}
+.Gates-Coverage-Last-7-Days  {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+  background-color: white;
+  width: 49.2%;
+    margin-left: 758px;
+    margin-top: -32px;
+    height: 524px;
+}
+.hidden {
+  display: none ;
+}
+.Attendance-Last-7-days{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+  background-color: white;
+  width: 46%;
+  margin-top: 57px;
+  height: 524px;
+}
+.name7{
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: blue;
+  padding-top: 14px;
+    margin-left: -274px;
+}
+.Employees-Attendance{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+    background-color: white;
+    width: 100%;
+    margin-top: 61px;
+    height: 368px;
+}
+.name8{
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: blue;
+  padding-top: 14px;
+  margin-left: -1186px;
+}
+.vechile-details{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+  background-color: white;
+  width: 113%;
+  margin-top: 57px;
+  height: 524px;
+  margin-left: 704px;
+  margin-top: -269px;
+}
+.Addanki-Trip-Types{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+  background-color: white;
+  width: 46%;
+  margin-top: 250px;
+  height: 524px;
+}
+.vechile-trips{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+    background-color: white;
+    width: 30%;
+    margin-top: 22px;
+    height: 345px;
+}
+.Transfer-points{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+    background-color: white;
+    width: 30%;
+    margin-left: 466px;
+    height: 345px;
+    margin-top: -345px;
+}
+.vechile-trips1{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+    background-color: white;
+    width: 30%;
+    margin-top: -345px;
+    height: 345px;
+    margin-left: 936px;
+}
+
+.s1{
+    margin-top: -13px;
+    margin-left: 638px;
+}
+.header4 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* You can adjust the z-index as needed */
+  background-color: #ffffff; /* Add your desired background color */
+  /* Add any other styling you want for the fixed header */
+}
+.bigbig{
+  margin-top: 160px;
+}

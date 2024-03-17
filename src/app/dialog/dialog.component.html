@@ -1,0 +1,45 @@
+
+<div class="heading">
+    House Info
+</div>
+<div class="">
+    <table class="custom-table">
+  <tr>
+    <td>Gate Number</td>
+    <td>{{data.gnum}}</td>
+  </tr>
+  <tr>
+    <td>Gate Name</td>
+    <td>{{data.gname}}</td>
+  </tr>
+  <tr>
+    <td>Street Name</td>
+    <td>my street</td> <!-- Leave it empty if no data provided -->
+  </tr>
+  <tr>
+    <td>No. of Residentials</td>
+    <td>{{data.nor}}</td>
+  </tr>
+  <tr>
+    <td>No. of Persons</td>
+    <td>{{data.nop}}</td>
+  </tr>
+  <tr>
+    <td>Scanned</td>
+    <td>No</td> <!-- Leave it empty if no data provided -->
+  </tr>
+</table>
+</div>
+<!-- <button mat-button (click)="closeDialog()">Close</button> -->
+
+<!-- Angular code for all days up to 31 -->
+<!-- <div>
+  Latitude: {{ data.location.latitude }}<br>
+  Longitude: {{ data.location.longitude }}
+</div> -->
+<div class="days-container">
+  <!-- Use *ngFor to iterate over the days -->
+  <div class="day" *ngFor="let day of days">
+    <div class="day-number">{{ day }}</div>
+  </div>
+</div>

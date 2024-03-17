@@ -1,0 +1,65 @@
+.custom-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.custom-table tr {
+  border-bottom: 1px  #000; /* Dotted line for each row */
+}
+
+.custom-table td {
+  padding: 8px;
+}
+
+.custom-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Grey color for even rows */
+}
+.heading{
+    background-color: blue;
+    font-size: 20px;
+    height: 46px;
+    padding-left: 185px;
+    padding-top: 17px;
+}
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px; /* Adjust the gap between days as needed */
+}
+
+.day {
+  width: 40px; /* Adjust the width of each day box as needed */
+  height: 40px; /* Adjust the height of each day box as needed */
+  background-color: #f2f2f2; /* Grey background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px; /* Adjust the font size as needed */
+  color: #555; /* Grey text color */
+  border-radius: 4px; /* Optional: Add rounded corners */
+}
+
+/* Add additional styling for today or special days as needed */
+/* CSS for days container and individual day */
+.days-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px; /* Adjust the gap between days as needed */
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.day {
+  width: 40px; /* Adjust the width of each day box */
+  height: 40px; /* Adjust the height of each day box */
+  background-color: #f2f2f2; /* Grey background color */
+  border: 1px solid #ccc; /* Border color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-number {
+  font-size: 14px; /* Adjust the font size of the day number */
+  color: #333; /* Text color */
+}

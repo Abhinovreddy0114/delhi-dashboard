@@ -1,0 +1,38 @@
+<div class="buttons-container">
+    <button class="first" [routerLink]="['/club1']"></button>
+    <button class="first" [routerLink]="['']">Home</button>
+    <button class="first" [routerLink]="['/ulb']">Addanki- Ulb</button>
+</div>
+<button class="third" [routerLink]="['/club1']">Krishnapatnam -workpackage</button>
+<button class="forth" [routerLink]="['/c1']">c1 - cluster</button>
+<div class="Heading">
+    C1 - Cluster Dashboard
+</div>
+<div class="datepicker">
+    <div class="text">
+        Select Date Range
+    </div>
+    <div class="value">
+        <mat-form-field style="    width: 169px;
+        height: 65px;
+        margin-top: 3px;">
+            <mat-label >Date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+    </div>
+      
+</div>
+<div class="ddddd">
+    <input class="search" type="text" [(ngModel)]="searchTerm" placeholder ="Search">
+    
+    <input class="search2" type="text" [(ngModel)]="searchTerm" placeholder ="Search">
+    <input class="search2" type="text" [(ngModel)]="searchTerm" placeholder ="Search">
+    <button   class = "second"(click)="search()">Search</button>
+</div>
+
+
+

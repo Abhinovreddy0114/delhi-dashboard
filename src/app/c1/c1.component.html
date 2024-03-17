@@ -1,0 +1,552 @@
+<!-- double-circle.component.html -->
+<div class="header4">
+    <app-header4></app-header4>
+</div>
+<div class="bigbig">
+<div class="inner1">
+    <div class="inner2">
+        <div class="inner3"></div>
+        <div class="inner4"></div>
+    </div>
+</div>
+<div class="text1">
+    Attendence<br>
+    9.39%
+</div>
+<div class="text2">
+    Transpostation<br>
+    0.00%
+</div>
+<div class="row1">
+    <div class="row1-column1">
+        <div class="heading">Workpackages</div>
+        <div class=" number">1</div>
+    </div>
+    <div class="row1-column2">
+        <div class="heading">Workpackages</div>
+        <div class=" number">1</div>
+    </div>
+    <div class="row1-column3">
+        <div class="heading">Workpackages</div>
+        <div class=" number">1</div>
+    </div>
+</div>
+<div class="row2">
+    <div class="row2-column1">
+        <div class="heading">Workpackages</div>
+        <div class=" number">1</div>
+        <div class="info">Workpackages</div>
+    </div>
+    <div class="row2-column2">
+        <div class="heading">Workpackages</div>
+        <div class=" number">1</div>
+        <div class="info">Workpackages</div>
+    </div>
+    <div class="row2-column3">
+        <div class="heading">Workpackages</div>
+        <div class=" number">1</div>
+        <div class="info">Workpackages</div>
+    </div>
+    <div class="row2-column4">
+        <div class="heading">Workpackages</div>
+        <div class=" number">1</div>
+        <div class="info">Workpackages</div>
+    </div>
+</div>
+
+<div class="row2">
+    <div class="row2-column1">
+        <div class="heading">Workpackages</div>
+        <div class=" number">1</div>
+        <div class="info">Workpackages</div>
+    </div>
+    <div class="row2-column2">
+        <div class="heading">Workpackages</div>
+        <div class=" number">1</div>
+        <div class="info">Workpackages</div>
+    </div>
+    <div class="row2-column3">
+        <div class="heading">Workpackages</div>
+        <div class=" number">1</div>
+        <div class="info">Workpackages</div>
+    </div>
+    <div class="row2-column4">
+        <div class="heading">Workpackages</div>
+        <div class=" number">1</div>
+        <div class="info">Workpackages</div>
+    </div>
+</div>
+<div class="row2">
+    <div class="row2-column1">
+        <div class="heading">Workpackages</div>
+        <div class=" number">1</div>
+        <div class="info">Workpackages</div>
+    </div>
+    <div class="row2-column2">
+        <div class="heading">Workpackages</div>
+        <div class=" number">1</div>
+        <div class="info">Workpackages</div>
+    </div>
+    <div class="row2-column3">
+        <div class="heading">Workpackages</div>
+        <div class=" number">1</div>
+        <div class="info">Workpackages</div>
+    </div>
+    <div class="row2-column4">
+        <div class="heading">Workpackages</div>
+        <div class=" number">1</div>
+        <div class="info">Workpackages</div>
+    </div>
+</div>
+<div class="buttons-container">
+    <button (click)="handleButtonClick(1)" [ngClass]="{ 'active': activeButton === 1 }" class="blue">Gates</button>
+    <button (click)="handleButtonClick(2)" [ngClass]="{ 'active': activeButton === 2 }"
+        class="purple1">Attendance</button>
+    <button (click)="handleButtonClick(3)" [ngClass]="{ 'active': activeButton === 3 }"
+        class="purple1">Transportation</button>
+</div>
+<div class="Workpackage-Wise-Gates" *ngIf="activeButton === 1">
+    <div class="name1">
+        Workpackage-Wise-Gates
+    </div>
+    <div class="Gates">
+        <table>
+            <thead>
+                <tr style="background-color: #f0f8ff;">
+                    <th rowspan="2">Sno</th>
+                    <th rowspan="2">Workpackage Name</th>
+                    <th colspan="3">Gates Scanned</th>
+                    <th colspan="3">Residential</th>
+                    <th colspan="3">Residential & Commercial</th>
+                    <th colspan="3">Apartments</th>
+                    <th colspan="3">Bulk Commercial</th>
+                </tr>
+                <tr style="background-color: #f0f8ff;">
+                    <th>Total</th>
+                    <th>Scanned</th>
+                    <th>Scanned %</th>
+                    <th>Total</th>
+                    <th>Scanned</th>
+                    <th>Scanned %</th>
+                    <th>Total</th>
+                    <th>Scanned</th>
+                    <th>Scanned %</th>
+                    <th>Total</th>
+                    <th>Scanned</th>
+                    <th>Scanned %</th>
+                    <th>Total</th>
+                    <th>Scanned</th>
+                    <th>Scanned %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let wp of workpackages">
+                    <td>{{ wp.sno }}</td>
+                    <td> <a [routerLink]="['/mp1']">{{ wp.name }}</a></td>
+                    <td>{{ wp.gatesScanned.total }}</td>
+                    <td>{{ wp.gatesScanned.residential.scanned }}</td>
+                    <td>{{ (wp.gatesScanned.residential.scanned / wp.gatesScanned.residential.total * 100) |
+                        number:'1.0-2'
+                        }}%</td>
+                    <td>{{ wp.gatesScanned.residential.total }}</td>
+                    <td>{{ wp.gatesScanned.residential.scanned }}</td>
+                    <td>{{ (wp.gatesScanned.residential.scanned / wp.gatesScanned.residential.total * 100) |
+                        number:'1.0-2'
+                        }}%</td>
+                    <td>{{ wp.gatesScanned.residentialAndCommercial.total }}</td>
+                    <td>{{ wp.gatesScanned.residentialAndCommercial.scanned }}</td>
+                    <td>{{ (wp.gatesScanned.residentialAndCommercial.scanned /
+                        wp.gatesScanned.residentialAndCommercial.total * 100) | number:'1.0-2' }}%</td>
+                    <td>{{ wp.gatesScanned.apartments.total }}</td>
+                    <td>{{ wp.gatesScanned.apartments.scanned }}</td>
+                    <td>{{ (wp.gatesScanned.apartments.scanned / wp.gatesScanned.apartments.total * 100) |
+                        number:'1.0-2'
+                        }}%</td>
+                    <td>{{ wp.gatesScanned.bulkCommercial.total }}</td>
+                    <td>{{ wp.gatesScanned.bulkCommercial.scanned }}</td>
+                    <td>{{ (wp.gatesScanned.bulkCommercial.scanned / wp.gatesScanned.bulkCommercial.total * 100) |
+                        number:'1.0-2' }}%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="name2">
+        Gates Coverage
+    </div>
+    <!-- <div class="Gates-Not-Scanned">
+        <div class="name3">
+            Work Package-wise Gates Scanned
+        </div>
+
+        <div>
+            <input class="search" type="text" [(ngModel)]="searchTerm" placeholder="Search" style="    width: 149px;
+            height: 14px;
+            border: 1px solid;
+            border-radius: 5px;
+            margin-left: 363px;
+            margin-top: -9px;">
+        </div>
+        <table class="micropocket-table" style="width: 94%;
+        height: 84%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-right: 347px;
+        margin-left: 19px;">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Micropocket Number</th>
+                    <th>Not Scanned Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of micropocketData">
+                    <td>{{ item.sNo }}</td>
+                    <td>{{ item.micropocketNumber }}</td>
+                    <td>{{ item.notScannedCount }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
+    <!-- <div class="Offline-Scans">
+        <div class="name4">
+            Offline Scans
+        </div>
+        <div>
+            <input class="search" type="text" [(ngModel)]="searchTerm" placeholder="Search" style="    width: 149px;
+            height: 14px;
+            border: 1px solid;
+            border-radius: 5px;
+            margin-left: 268px;
+            margin-top: -9px;">
+            <button   class = "press"(click)="search()">Search</button>
+        </div>
+        <div style="margin: auto;    margin-top: 214px;font-size: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            No data available
+        </div>
+
+    </div>
+    <div class="Unassigned-Tags ">
+        <div class="name5">
+            Offline Scans
+        </div>
+        <div>
+            <input class="search" type="text" [(ngModel)]="searchTerm" placeholder="Search" style="    width: 149px;
+            height: 14px;
+            border: 1px solid;
+            border-radius: 5px;
+            margin-left: 511px;
+            margin-top: -9px;">
+            <button   class = "press"(click)="search()">Search</button>
+        </div>
+        <div style="margin: auto;    margin-top: 214px;font-size: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            No data available
+        </div>
+
+    </div> -->
+    <div class="Gates-Coverage-Last-7-Days ">
+        <div class="name6">
+            Gates Coverage - Last 7 days
+        </div>
+    </div>
+</div>
+<div [ngClass]="{' Work-Package-wise-Gates-Scanned': activeButton === 1, 'hidden': activeButton !== 1}" style="width: 735px;
+height: 450px;
+margin: auto;
+margin-top: 23px;
+padding-top: 71px;
+flex-direction: column;
+align-items: center;
+margin-left: 17px;">
+    <!-- <div class="name1">
+    Work Package-wise Gates Scanned
+  </div> -->
+    <canvas id="myChart2" style="height: 350px;
+  width: 300px;"></canvas>
+
+
+</div>
+<div [style.display]="activeButton == 1?'block':'none'"
+    style="margin: auto; margin-right: 1103px; margin-top: -531px; padding-top: 71px; display: flex; flex-direction: column; align-items: center; height: 467px; width: 594px; margin-left: 856px;">
+    <!-- Your content here -->
+    <canvas id="mySecondChart" style="height: 465px; width: 619px;"></canvas>
+</div>
+
+<div class="Workpackage-Wise-Gates" *ngIf="activeButton === 2">
+    <div class="name1">
+        Workpackage-Wise-Gates
+    </div>
+    <div class="Attendence">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Sno</th>
+                    <th rowspan="2">Workpackage Name</th>
+                    <th colspan="3">Gates Scanned</th>
+                    <th colspan="3">Residential</th>
+                    <th colspan="3">Residential & Commercial</th>
+                    <th colspan="3">Apartments</th>
+                    <th colspan="3">Bulk Commercial</th>
+                </tr>
+                <tr>
+                    <th>Total</th>
+                    <th>Scanned</th>
+                    <th>Scanned %</th>
+                    <th>Total</th>
+                    <th>Scanned</th>
+                    <th>Scanned %</th>
+                    <th>Total</th>
+                    <th>Scanned</th>
+                    <th>Scanned %</th>
+                    <th>Total</th>
+                    <th>Scanned</th>
+                    <th>Scanned %</th>
+                    <th>Total</th>
+                    <th>Scanned</th>
+                    <th>Scanned %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let wp of workpackages">
+                    <td>{{ wp.sno }}</td>
+                    <td> <a [routerLink]="['/mp1']">{{ wp.name }}</a></td>
+                    <td>{{ wp.gatesScanned.total }}</td>
+                    <td>{{ wp.gatesScanned.residential.scanned }}</td>
+                    <td>{{ (wp.gatesScanned.residential.scanned / wp.gatesScanned.residential.total * 100) |
+                        number:'1.0-2'
+                        }}%</td>
+                    <td>{{ wp.gatesScanned.residential.total }}</td>
+                    <td>{{ wp.gatesScanned.residential.scanned }}</td>
+                    <td>{{ (wp.gatesScanned.residential.scanned / wp.gatesScanned.residential.total * 100) |
+                        number:'1.0-2'
+                        }}%</td>
+                    <td>{{ wp.gatesScanned.residentialAndCommercial.total }}</td>
+                    <td>{{ wp.gatesScanned.residentialAndCommercial.scanned }}</td>
+                    <td>{{ (wp.gatesScanned.residentialAndCommercial.scanned /
+                        wp.gatesScanned.residentialAndCommercial.total * 100) | number:'1.0-2' }}%</td>
+                    <td>{{ wp.gatesScanned.apartments.total }}</td>
+                    <td>{{ wp.gatesScanned.apartments.scanned }}</td>
+                    <td>{{ (wp.gatesScanned.apartments.scanned / wp.gatesScanned.apartments.total * 100) |
+                        number:'1.0-2'
+                        }}%</td>
+                    <td>{{ wp.gatesScanned.bulkCommercial.total }}</td>
+                    <td>{{ wp.gatesScanned.bulkCommercial.scanned }}</td>
+                    <td>{{ (wp.gatesScanned.bulkCommercial.scanned / wp.gatesScanned.bulkCommercial.total * 100) |
+                        number:'1.0-2' }}%</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <!-- <div class="Attendance-Last-7-days">
+        <div class="name7">
+            Attendance - Last 7 days
+        </div>
+        <div>
+            <input class="search" type="text" [(ngModel)]="searchTerm" placeholder="Search" style="    width: 149px;
+            height: 14px;
+            border: 1px solid;
+            border-radius: 5px;
+            margin-left: 431px;
+            margin-top: -9px;">
+            <button   class = "press"(click)="search()">Search</button>
+        </div>
+        <div style="margin: auto;    margin-top: 214px;font-size: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            No data available
+        </div>
+    </div> -->
+    <div class="Employees-Attendance">
+            <div class="name8">
+                Employees Attendance - (102)
+            </div>
+            <div class="s1">
+                <input class="search" type="text" [(ngModel)]="searchTerm" placeholder="Search" style="    width: 149px;
+            height: 14px;
+            border: 1px solid;
+            border-radius: 5px;
+            margin-left: 537px;
+            margin-top: -9px;">
+                <!-- <button   class = "press"(click)="search()">Search</button> -->
+            </div>
+            <table class="idid" style="width: 94%; 
+    height: 84%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-right: 347px;
+    padding-left: 10px; 
+    margin-left: 19px;">
+                <thead>
+                    <tr style="background-color: (110, 105, 174)">
+                        <th>Sno</th>
+                        <th>Employee Name</th>
+                        <th>Employee Id</th>
+                        <th>Mobile No.</th>
+                        <th>Designation</th>
+                        <th>Morning Status</th>
+                        <th>Afternoon Status</th>
+                        <th>Micropocket</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let employee of employeesData">
+                        <td>{{employee.Sno}}</td>
+                        <td>{{employee['Employee Name']}}</td>
+                        <td>{{employee['Employee Id']}}</td>
+                        <td>{{employee['Mobile No.']}}</td>
+                        <td>{{employee.Designation}}</td>
+                        <td>{{employee['Morning Status']}}</td>
+                        <td>{{employee['Afternoon Status']}}</td>
+                        <td>{{employee.Micropocket}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="vechile-trips">
+                <div class="name7">
+                    Vehicle Trips
+    
+                </div>
+            </div>
+            <div class="Transfer-points">
+                <div class="name7">
+                    Transper Points
+                </div> 
+            </div>
+            <div class="vechile-trips1">
+                <div class="name7">
+                    Vehicle Trips
+    
+                </div>
+            </div>
+
+        </div>
+    </div>
+<div class="Workpackage-Wise-Gates" *ngIf="activeButton === 3">
+
+    <div class="name1">
+        Workpackage-Wise-Gates
+    </div>
+    <div class="Attendence">
+        <!-- <table>
+            <thead>
+                <tr style="background-color: #f0f8ff;">
+                    <th rowspan="2">Sno</th>
+                    <th rowspan="2">Workpackage Name</th>
+                    <th colspan="3">Gates Scanned</th>
+                    <th colspan="3">Residential</th>
+                    <th colspan="3">Residential & Commercial</th>
+                    <th colspan="3">Apartments</th>
+                    <th colspan="3">Bulk Commercial</th>
+                </tr>
+                <tr style="background-color: #f0f8ff;">
+                    <th>Total</th>
+                    <th>Scanned</th>
+                    <th>Scanned %</th>
+                    <th>Total</th>
+                    <th>Scanned</th>
+                    <th>Scanned %</th>
+                    <th>Total</th>
+                    <th>Scanned</th>
+                    <th>Scanned %</th>
+                    <th>Total</th>
+                    <th>Scanned</th>
+                    <th>Scanned %</th>
+                    <th>Total</th>
+                    <th>Scanned</th>
+                    <th>Scanned %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let wp of workpackages">
+                    <td>{{ wp.sno }}</td>
+                    <td> <a [routerLink]="['/club1']">{{ wp.name }}</a></td>
+                    <td>{{ wp.gatesScanned.total }}</td>
+                    <td>{{ wp.gatesScanned.residential.scanned }}</td>
+                    <td>{{ (wp.gatesScanned.residential.scanned / wp.gatesScanned.residential.total * 100) |
+                        number:'1.0-2'
+                        }}%</td>
+                    <td>{{ wp.gatesScanned.residential.total }}</td>
+                    <td>{{ wp.gatesScanned.residential.scanned }}</td>
+                    <td>{{ (wp.gatesScanned.residential.scanned / wp.gatesScanned.residential.total * 100) |
+                        number:'1.0-2'
+                        }}%</td>
+                    <td>{{ wp.gatesScanned.residentialAndCommercial.total }}</td>
+                    <td>{{ wp.gatesScanned.residentialAndCommercial.scanned }}</td>
+                    <td>{{ (wp.gatesScanned.residentialAndCommercial.scanned /
+                        wp.gatesScanned.residentialAndCommercial.total * 100) | number:'1.0-2' }}%</td>
+                    <td>{{ wp.gatesScanned.apartments.total }}</td>
+                    <td>{{ wp.gatesScanned.apartments.scanned }}</td>
+                    <td>{{ (wp.gatesScanned.apartments.scanned / wp.gatesScanned.apartments.total * 100) |
+                        number:'1.0-2'
+                        }}%</td>
+                    <td>{{ wp.gatesScanned.bulkCommercial.total }}</td>
+                    <td>{{ wp.gatesScanned.bulkCommercial.scanned }}</td>
+                    <td>{{ (wp.gatesScanned.bulkCommercial.scanned / wp.gatesScanned.bulkCommercial.total * 100) |
+                        number:'1.0-2' }}%</td>
+                </tr>
+            </tbody>
+        </table> -->
+    </div>
+    <div class="Addanki-Trip-Types">
+        <div class="name7" style="    margin-left: -351px;">
+            Addanki Trip Types - Current day
+        </div>
+        <div style="margin: auto;    margin-top: 214px;font-size: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            No data available
+        </div>
+        <div class="vechile-details">
+            <div class="name7" style="    margin-left: -486px;">
+                Vehicles Details - (9)
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div [ngClass]="{'': activeButton === 2, 'hidden': activeButton !== 2}" style=" margin: auto;margin-right: 1103px;
+  margin-top: 0px;padding-top: 71px; flex-direction: column; align-items: center;  margin-top: 392px;
+    margin-left: 17px;">
+    <!-- <div class="name1">
+    Work Package-wise Gates Scanned
+  </div> -->
+  <canvas _ngcontent-ng-c2669704308 id="mythirdChart" style="height: 284px;width: 356px;display: block;box-sizing: border-box;" width="465" height="355"></canvas>
+
+
+</div>
+<div [ngClass]="{'': activeButton === 2, 'hidden': activeButton !== 2}"
+    style="height: 337px;
+    width: 398px; margin: auto;margin-right: 1103px;
+  margin-top: 22px;padding-top: 89px; flex-direction: column; align-items: center;  margin-left: 497px;
+    margin-top: -406px; ">
+
+    <canvas id="myforthChart" style="height: 277px;
+    width: 345px;;"></canvas>
+
+
+</div>
+<div [ngClass]="{'': activeButton === 2, 'hidden': activeButton !== 2}"
+    style="height: 337px;
+    width: 398px; margin: auto;margin-right: 1103px;
+  margin-top: 22px;padding-top: 89px; flex-direction: column; align-items: center;  margin-left: 497px;
+    margin-top: -406px; ">
+
+    <canvas id="myforthChart" style="height: 277px;
+    width: 345px;;"></canvas>
+
+
+</div>
+<div [ngClass]="{'': activeButton === 2, 'hidden': activeButton !== 2}"
+    style="height: 337px;
+    width: 398px; margin: auto;margin-right: 1103px;
+  margin-top: 22px;padding-top: 89px; flex-direction: column; align-items: center;     margin-left: 973px;
+    margin-top: -446px; ">
+
+    <canvas id="myfifthChart" style="height: 277px;
+    width: 345px;;"></canvas>
+
+
+</div>
+</div>

@@ -1,0 +1,127 @@
+/* card.component.css */
+
+.card {
+    width: 500px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px;
+    transition: background-color 0.3s ease;
+    overflow: hidden; /* Hide overflow content */
+}
+
+.card:hover {
+    background-color: #e0e0e0; /* Highlight color on hover */
+}
+/* card.component.css */
+
+.card2 {
+    width: 500px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px;
+    transition: background-color 0.3s ease;
+    overflow: hidden; /* Hide overflow content */
+}
+
+.card2:hover {
+    background-color: #e0e0e0; /* Highlight color on hover */
+}
+/* card.component.css */
+
+.card3 {
+    width: 500px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px;
+    transition: background-color 0.3s ease;
+    overflow: hidden; /* Hide overflow content */
+}
+
+.card3:hover {
+    background-color: #e0e0e0; /* Highlight color on hover */
+}
+
+.home {
+    display: flex;
+}
+
+.card, .card2, .card3 {
+    margin-right: 5px;
+}
+
+.card2 {
+    margin-right: 10px; /* Additional 5px for the space between card2 and card3 */
+}
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first30 {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button button {
+    background-color: #3498db; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button button:hover {
+    background-color: #2980b9; /* Highlight color on hover */
+}
+
+
+/* Styling for the container and table */
+/* .container-and-table {
+    display: flex;
+    flex-direction: column;
+} */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccc;
+    width: 95%;
+    margin: 20px auto 30px;
+}
+
+.left-side, .right-side {
+    margin: 10px; /* Adjust margin as needed */
+}
+
+/* Add margin-bottom to create space between the table and the footer */
+
+.Gates th, .Gates td {
+  border: 1px solid #ddd;
+  padding: 6px;
+  text-align: left;
+}
+
+.Gates th {
+  background-color:  rgb(89, 186, 193); /* Pale light green */
+}
+.Gates{
+    margin-bottom: 100px;
+    margin-left: 35px;
+    width: 80%;
+}

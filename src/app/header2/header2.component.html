@@ -1,0 +1,31 @@
+<div class="buttons-container">
+    <button class="first" [routerLink]="['/']"></button>
+    <button class="first" [routerLink]="['/']">Home</button>
+    <button class="first" [routerLink]="['ward/:id']">Central - zone</button>
+</div>
+<div class="Heading">
+    Central - Dashboard
+</div>
+<div class="datepicker">
+    <div class="text">
+        Select Date Range
+    </div>
+    <div class="value">
+        <mat-form-field style="    width: 169px;
+        height: 65px;
+        margin-top: 3px;">
+            <mat-label >Date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+    </div>
+      
+</div>
+<div class="ddddd">
+    <input class="search" type="text" [(ngModel)]="searchTerm" placeholder ="Search">
+    <button   class = "second"(click)="search()">Search</button>
+</div>
+
